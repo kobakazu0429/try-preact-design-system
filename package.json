@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint": "pnpm run lint:eslint && pnpm run lint:prettier",
     "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --fix",
-    "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --write"
+    "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --write",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "preact": "^10.13.2"
@@ -17,7 +19,18 @@
   "devDependencies": {
     "@kobakazu0429/eslint-config-typescript-react": "^3.1.5",
     "@preact/preset-vite": "^2.5.0",
+    "@storybook/addon-essentials": "^7.0.23",
+    "@storybook/addon-interactions": "^7.0.23",
+    "@storybook/addon-links": "^7.0.23",
+    "@storybook/blocks": "^7.0.23",
+    "@storybook/preact": "^7.0.23",
+    "@storybook/preact-vite": "^7.0.23",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "eslint": "^8.43.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.23",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   }
