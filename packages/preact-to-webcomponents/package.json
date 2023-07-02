@@ -1,0 +1,20 @@
+{
+  "name": "preact-to-webcomponents",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "just-kebab-case": "^4.2.0",
+    "preact-custom-element": "^4.2.1",
+    "rollup": "^3.25.3",
+    "ts-morph": "^19.0.0"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^3.0.2"
+  }
+}
