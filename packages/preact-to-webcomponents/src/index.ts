@@ -17,7 +17,7 @@ export const preact2webcomponents: (options: PluginOptions) => Plugin = ({
     name: "preact-to-webcomponents",
 
     transform(code, path) {
-      if (path.endsWith(".tsx")) {
+      if (!path.includes("stories") && path.endsWith(".tsx")) {
         const project = new Project();
 
         project.addSourceFileAtPath(path);
@@ -64,7 +64,9 @@ import register from "preact-custom-element";
 
 ${code}
 
-register(${componentName}, "${customElementName}", [${props}], { shadow: true });
+if(!customElements.get("${customElementName}")) {
+  register(${componentName}, "${customElementName}", [${props}], { shadow: true });
+}
 `,
         };
       }

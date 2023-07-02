@@ -1,0 +1,19 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "preact-to-webcomponents": "workspace:*"
+  },
+  "peerDependencies": {
+    "theme": "workspace:*"
+  },
+  "dependencies": {
+    "preact-custom-element": "^4.2.1"
+  }
+}

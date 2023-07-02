@@ -9,11 +9,24 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/preact-vite",
-    options: {},
+    options: {
+      builder: {
+        viteConfigPath: "packages/Button/vite.config.ts",
+      },
+    },
   },
   docs: {
     autodocs: "tag",
   },
+  // viteFinal: (config, options) => {
+  //   config.plugins?.push(
+  //     preact2webcomponents({ customElementNamePrefix: "x" })
+  //   );
+  //   // @ts-expect-error
+  //   config.css?.modules["scopeBehaviour"] = "global";
+  //   // @ts-expect-error
+  //   config.build?.rollupOptions?.external = externals;
+  // },
 };
 
 export default config;

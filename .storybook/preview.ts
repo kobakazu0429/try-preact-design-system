@@ -1,7 +1,4 @@
 import type { Preview } from "@storybook/preact";
-import { initTheme } from "../packages/theme";
-
-initTheme();
 
 const preview: Preview = {
   parameters: {
