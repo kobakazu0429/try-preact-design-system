@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "turbo build",
+    "tcm": "tcm -p 'packages/**/*.module.css' .",
+    "tcm:watch": "pnpm run tcm --watch",
     "preview": "vite preview",
     "lint": "pnpm run lint:eslint && pnpm run lint:prettier",
     "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --fix",
@@ -32,6 +34,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.23",
     "turbo": "^1.10.7",
+    "typed-css-modules": "^0.7.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   }
