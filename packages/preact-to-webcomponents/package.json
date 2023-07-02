@@ -2,8 +2,8 @@
   "name": "preact-to-webcomponents",
   "version": "0.0.0",
   "private": true,
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc && vite build"

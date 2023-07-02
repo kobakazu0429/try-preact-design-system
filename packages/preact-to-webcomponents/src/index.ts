@@ -64,7 +64,7 @@ import register from "preact-custom-element";
 
 ${code}
 
-register(${componentName}, ${customElementName}, [${props}], { shadow: true });
+register(${componentName}, "${customElementName}", [${props}], { shadow: true });
 `,
         };
       }
