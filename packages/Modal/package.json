@@ -1,0 +1,18 @@
+{
+  "name": "modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@types/react-modal": "^3.16.0",
+    "preact-to-webcomponents": "workspace:*"
+  },
+  "dependencies": {
+    "preact-custom-element": "^4.2.1",
+    "react-modal": "^3.16.1"
+  }
+}
