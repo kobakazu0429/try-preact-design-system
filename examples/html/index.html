@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+
+    <x-button background-color="#f0f" label="aaa"></x-button>
+    <x-button label="styled" onClick='()=>console.log("11")'></x-button>
+    <x-modal></x-modal>
+
+    <div id="root"></div>
+  </body>
+  <script type="importmap">
+    {
+      "imports": {
+        "preact": "https://esm.sh/preact",
+        "preact/hooks": "https://esm.sh/preact/hooks",
+        "goober": "https://esm.sh/goober",
+        "goober/prefixer": "https://esm.sh/goober/prefixer",
+        "preact-custom-element": "https://esm.sh/preact-custom-element",
+        "button": "http://localhost:8001/packages/Button/dist/index.mjs",
+        "theme": "http://localhost:8001/packages/theme/dist/index.mjs"
+      }
+    }
+  </script>
+  <script
+    type="module"
+    src="http://localhost:8001/packages/Button/dist/index.mjs"
+  ></script>
+  <script
+    type="module"
+    src="http://localhost:8001/packages/modal/dist/index.mjs"
+  ></script>
+</html>
