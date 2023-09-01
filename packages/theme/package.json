@@ -1,0 +1,14 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "goober": "^2.1.13"
+  }
+}
